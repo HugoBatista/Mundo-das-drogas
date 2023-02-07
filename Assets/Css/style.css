@@ -125,7 +125,7 @@ html {
     .nav > .nav-links {
       position: absolute;
       display: block;
-      width: 100%;
+      width: 50%;
       background-color: #333;
       height: 0px;
       transition: all 0.3s ease-in;
