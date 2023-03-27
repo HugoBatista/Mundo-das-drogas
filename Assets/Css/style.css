@@ -3,12 +3,21 @@
 body{
     flex-direction: column;
     font-family: 'Fredoka One', cursive;
-    background-color: #181818;
+    background: url(../Images/Background.jpg) no-repeat center top / cover;
     text-align: center;
     align-items: center;
     
 }
 
+:root{
+  --cor00: #865C2C;
+  --cor01: #2c1608;
+  --cor02: rgba(0, 0, 0, 0.3);
+  --cor03: #000000;
+  --cor04: #ffffff;
+  --cor05: #444444;
+  --cor06: #181818;
+}
 
 h1{
     text-align: center;

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body{
+    flex-direction: column;
+    font-family: 'Fredoka One', cursive;
+    background-color: var(--cor06);
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+}
+
+
+main{
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+:root{
+  --cor00: #094100;
+  --cor01: #3BB128;
+  --cor02: rgba(0, 0, 0, 0.3);
+  --cor03: #000000;
+  --cor04: #ffffff;
+  --cor05: #333;
+  --cor06: #1B1C34;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--cor03);
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--cor04); 
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(var(--cor01), var(--cor00), var(--cor01));
+    border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  
+.nav {
+  height: 50px;
+  padding-left: 10px;
+  width: 100%;
+  background-color: var(--cor01);
+  box-shadow: 0px 3px 10px var(--cor00);
+  border-radius: 15px;
+  position: relative;
+  margin-top: -7px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav-title
+{
+  float: left;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: var(--cor04);
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: center;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 60px 13px 10px;
+  text-decoration: none;
+  color: var(--cor00)
+}
+
+.nav > .nav-links > a:hover {
+  background-color: var(--cor02);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: var(--cor01);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid var(--cor04);
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-image: url(../Images/menu\ img.png);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+main{
+  min-width: 300px;
+  max-width: 1160px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  background-color: var(--cor06);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+main h1, h2{
+ 
+  font-weight: normal;
+}
+
+main h1{
+  color:var(--cor00);
+  font-size: 1.8em;
+}
+
+
+main a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor05);
+  background-color: var(--cor01);
+  padding: 2px 5px;
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: var(--cor04);
+}
+
+main p{
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 2em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
