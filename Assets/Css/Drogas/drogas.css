@@ -209,15 +209,8 @@ main p{
   line-height: 1.5em;
 }
 
-main img{
-  width: 100%;
-}
 
-main img.pequena{
-  max-width: 350px;
-  display: block;
-  margin: auto;
-}
+
 
 p{
   color:var(--cor04);
@@ -261,9 +254,10 @@ article ul{
 
 img{ 
     
-    width: 400px;
-    height: 300px;
- 
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .alprazolam{

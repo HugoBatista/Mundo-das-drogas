@@ -10,13 +10,13 @@ body{
 }
 
 :root{
-  --cor00: #865C2C;
-  --cor01: #2c1608;
+  --cor00: #094100;
+  --cor01: #3BB128;
   --cor02: rgba(0, 0, 0, 0.3);
   --cor03: #000000;
   --cor04: #ffffff;
-  --cor05: #444444;
-  --cor06: #181818;
+  --cor05: #333;
+  --cor06: #1B1C34;
 }
 
 h1{
@@ -37,12 +37,12 @@ a:visited {
 }
 
 ::-webkit-scrollbar-track{
-    background-color: #ffffff;
+    background-color: var(--cor04);
     
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#38240c, #30240e);
+    background: linear-gradient(var(--cor00), var(--cor01));
     border-radius: 5px;
 }
 
@@ -96,7 +96,7 @@ html {
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 13px 25px 13px 25px;
     text-decoration: none;
     color: #efefef;
   }
@@ -136,7 +136,7 @@ html {
       display: block;
       width: 100%;
       height: 0px;
-      background-color: #333;
+      background-image: url(../Images/background.png);
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
