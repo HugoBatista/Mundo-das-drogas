@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@font-face {
+  font-family: Rockwell;
+  src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
+}
+@font-face {
+  font-family: Rockwell-bold;
+  src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/Rockwell-Bold.ttf);
+}
 
 body{
     flex-direction: column;
-    font-family: 'Fredoka One', cursive;
-    background: url(../Images/Background.jpg) no-repeat center top / cover;
+    font-family: var(--font-Rockwell-bold);
+    background-image: url(../Images/wallpaperbetter.jpg);
     text-align: center;
     align-items: center;
     
@@ -17,6 +25,10 @@ body{
   --cor04: #ffffff;
   --cor05: #333;
   --cor06: #1B1C34;
+  --cor07: #b5ecd5;
+  --cor08: #207a55;
+  --font-Rockwell: 'Rockwell', cursive;
+  --font-Rockwell-bold: 'Rockwell-bold', cursive;
 }
 
 h1{
@@ -27,7 +39,7 @@ a{
     text-decoration: none;
 }
 a:visited {
-    color: #000000;
+    color: var(--cor03);
   }
 
 
@@ -60,8 +72,8 @@ html {
     height: 50px;
     padding-left: 10px;
     width: 100%;
-    background-color: #094100;
-    box-shadow: 0px 3px 10px #3BB128;
+    background-color: var(--cor07);
+    box-shadow: 0px 3px 10px var(--cor08);
     border-radius: 0px 0px 15px 15px;
     position: relative;
     margin-top: -7px;
@@ -80,7 +92,7 @@ html {
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
-    color: #fff;
+    color: var(--cor04);
     padding: 10px 10px 10px 10px;
   }
   
@@ -98,18 +110,18 @@ html {
     display: inline-block;
     padding: 13px 25px 13px 25px;
     text-decoration: none;
-    color: #efefef;
+    color: var(--cor03);
   }
   
   .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--cor02);
   }
   
   .nav > #nav-check {
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:820px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -156,12 +168,14 @@ html {
     }
   }
 
-
-.footer {
-    border-radius: 15px;
-    box-shadow: 0px 3px 10px #929492;
-    flex-shrink: 0;
-    padding: 1rem;
-    background-color: #444444;
-    text-align: center;
-}
+  main{
+    min-width: 300px;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    background-color: var(--cor03);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+  }

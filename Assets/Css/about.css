@@ -112,7 +112,7 @@ a:visited {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:757px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -163,7 +163,7 @@ a:visited {
 
 main{
   min-width: 300px;
-  max-width: 1000px;
+  max-width: 1500px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
@@ -240,14 +240,15 @@ p{
 }
 
 .grid {
+  
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
   gap: 4%;
   margin: 5% 0;
 }
 
 .card {
-
+  
   overflow: hidden;
   padding: 12px;
   background-color: var(--cor00) ;

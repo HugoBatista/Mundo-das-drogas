@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@font-face {
+  font-family: Rockwell;
+  src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
+}
+@font-face {
+  font-family: Rockwell-bold;
+  src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/Rockwell-Bold.ttf);
+}
+
 
 body{
     flex-direction: column;
-    font-family: 'Fredoka One', cursive;
+    font-family: var(--font-Rockwell-bold);
     background-color: var(--cor06);
     text-align: center;
     align-items: center;
     margin-left: 1px;
     margin-right: 1px;
-}
-
-
-:root{
+  }
+  
+  
+  :root{
     --cor00: #094100;
     --cor01: #3BB128;
     --cor02: rgba(0, 0, 0, 0.3);
@@ -19,6 +28,8 @@ body{
     --cor04: #ffffff;
     --cor05: #333;
     --cor06: #1B1C34;
+    --font-Rockwell: 'Rockwell', cursive;
+    --font-Rockwell-bold: 'Rockwell-bold', cursive;
   }
 
   h1{
@@ -161,7 +172,7 @@ html {
 
 main{
   min-width: 300px;
-  max-width: 1000px;
+  max-width: 1500px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
@@ -224,7 +235,7 @@ p{
 /* Start-Aside */
 
 aside{
-  font-family: var(--font-padrao);
+  font-family: var(--font-Rockwell);
   background-color: var(--cor01);
   padding: 10px;
   border-radius: 10px;
