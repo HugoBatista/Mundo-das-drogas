@@ -28,8 +28,8 @@ body{
   --cor05: #333;
   --cor06: #1B1C34;
   --cor07: #b5ecd5;
-  --cor08: #52e4a4;
-  --cor09: #207a55;
+  --cor08: #207a55;
+  --cor09: #4a9b79;
   --font-Rockwell: 'Rockwell', cursive;
   --font-Rockwell-bold: 'Rockwell-bold', cursive;
 }
@@ -42,7 +42,7 @@ a{
     text-decoration: none;
 }
 a:visited {
-    color: #000000;
+    color: var(--cor03);
   }
 
 
@@ -75,8 +75,8 @@ html {
     height: 50px;
     padding-left: 10px;
     width: 100%;
-    background-color: var(--cor00);
-    box-shadow: 0px 3px 10px var(--cor01);
+    background-color: var(--cor07);
+    box-shadow: 0px 3px 10px var(--cor08);
     border-radius: 15px;
     position: relative;
   }
@@ -111,7 +111,7 @@ html {
     display: inline-block;
     padding: 13px 25px 13px 25px;
     text-decoration: none;
-    color: var(--cor04);
+    color: var(--cor09);
   }
   
   .nav > .nav-links > a:hover {
@@ -136,7 +136,7 @@ html {
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: var(--cor02);
+      background-color: var(--cor01);
     }
     .nav > .nav-btn > label > span {
       display: block;
@@ -148,7 +148,7 @@ html {
       position: absolute;
       display: block;
       width: 100%;
-      background-color: var(--cor05);
+      background-image: url(../Images/background.png);
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -217,7 +217,7 @@ html {
     font-family: var(--font-Rockwell);
     font-weight: 900;
     text-transform: capitalize;
-    color: var(--cor00);
+    color: var(--cor09);
     font-size: 26px;
     padding-bottom: 20px;
 }
@@ -230,11 +230,11 @@ html {
 }
 
 a.read_more {
-    color: #FFF;
+    color: var(--cor07);
     font-size: 13px;
     text-decoration: none;
     letter-spacing: 1.1px;
-    background: var(--cor00);
+    background: var(--cor09);
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 24px 0px;

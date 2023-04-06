@@ -27,6 +27,7 @@ body{
   --cor06: #1B1C34;
   --cor07: #b5ecd5;
   --cor08: #207a55;
+  --cor09: #4a9b79;
   --font-Rockwell: 'Rockwell', cursive;
   --font-Rockwell-bold: 'Rockwell-bold', cursive;
 }
@@ -110,7 +111,7 @@ html {
     display: inline-block;
     padding: 13px 25px 13px 25px;
     text-decoration: none;
-    color: var(--cor04);
+    color: var(--cor09);
   }
   
   .nav > .nav-links > a:hover {
@@ -170,12 +171,12 @@ html {
 
   main{
     min-width: 300px;
-    max-width: 1500px;
+    max-width: 900px;
     margin: auto;
     margin-bottom: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px;
-    background-color: var(--cor03);
+    background-color: var(--cor07);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
   }
