@@ -7,6 +7,7 @@
   font-family: Rockwell-bold;
   src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/Rockwell-Bold.ttf);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -51,6 +52,7 @@ body{
   --cor07: #b5ecd5;
   --cor08: #207a55;
   --cor09: #4a9b79;
+  --cor10: #9ae4c4;
   --font-Rockwell: 'Rockwell', cursive;
   --font-Rockwell-bold: 'Rockwell-bold', cursive;
 }
@@ -73,8 +75,8 @@ a:visited {
   
 .nav {
   height: 55px;
-    padding-left: 10px;
-    width: 100%;
+  padding-left: 10px;
+  width: 100%;
   background-color: var(--cor07);
   box-shadow: 0px 3px 10px var(--cor08);
   border-radius: 0px 0px 15px 15px;
@@ -124,7 +126,7 @@ a:visited {
   display: none;
 }
 
-@media (max-width:757px) {
+@media (max-width:850px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -138,7 +140,7 @@ a:visited {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: var(--cor01);
+    background-color: var(--cor07);
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -150,7 +152,7 @@ a:visited {
     position: absolute;
     display: block;
     width: 100%;
-    background-image: url(../Images/background.png);
+    background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -255,8 +257,6 @@ p{
   padding: 30px;
   margin: 10px;
   border-radius: 12px;
-  
- 
 }
 
 
@@ -288,7 +288,7 @@ p{
 }
 
 .card:hover{
-  background-color: var(--cor06);
+  background-color: var(--cor10);
 }
 
 .description {

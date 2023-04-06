@@ -57,7 +57,7 @@ a:visited {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(var(--cor00), var(--cor01));
+    background: linear-gradient(var(--cor07), var(--cor08));
     border-radius: 5px;
 }
 
@@ -122,7 +122,7 @@ html {
     display: none;
   }
   
-  @media (max-width:757px) {
+  @media (max-width:850px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -136,7 +136,7 @@ html {
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: var(--cor01);
+      background-color: var(--cor07);
     }
     .nav > .nav-btn > label > span {
       display: block;
@@ -148,7 +148,7 @@ html {
       position: absolute;
       display: block;
       width: 100%;
-      background-image: url(../Images/background.png);
+      background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
