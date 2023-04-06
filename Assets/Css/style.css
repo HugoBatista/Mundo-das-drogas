@@ -110,7 +110,7 @@ html {
     display: inline-block;
     padding: 13px 25px 13px 25px;
     text-decoration: none;
-    color: var(--cor03);
+    color: var(--cor04);
   }
   
   .nav > .nav-links > a:hover {
@@ -141,7 +141,7 @@ html {
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid var(--cor04);
     }
     .nav > .nav-links {
       position: absolute;
