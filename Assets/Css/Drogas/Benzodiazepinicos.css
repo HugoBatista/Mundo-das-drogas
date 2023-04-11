@@ -133,7 +133,7 @@ html {
     display: none;
   }
 
-  @media (max-width:850px) {
+  @media (max-width:920px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -183,7 +183,7 @@ html {
 
 main{
   min-width: 300px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
@@ -224,9 +224,8 @@ main a:hover{
 }
 
 main p{
-  margin: 15px 0px;
+  margin: 0px 0px;
   text-align: justify;
-  text-indent: 2em;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -285,9 +284,7 @@ img{
 .imgs{
   width: 60%;
 }
-.oi{
-  align-items: left;
-}
+
 
 
 ul{
@@ -296,4 +293,22 @@ ul{
 
 h3{
   color: var(--cor08);
+}
+
+
+div.video{
+  background-color: var(--cor07);
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 56.6%;
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
 }

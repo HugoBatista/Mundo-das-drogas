@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @font-face {
   font-family: Rockwell;
   src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
@@ -32,17 +33,16 @@ body{
   --font-Rockwell-bold: 'Rockwell-bold', cursive;
 }
 
+h1,h2,h3{
+  font-family: var(--font-Rockwell-bold)
+}
 h1{
     text-align: center;
+    color: var(--cor08);
 }
-
-a{
-    text-decoration: none;
+h2{
+  color: var(--cor08);
 }
-a:visited {
-    color: var(--cor03);
-  }
-
 
 ::-webkit-scrollbar{
     width: 20px;
@@ -180,3 +180,30 @@ html {
     background-color: var(--cor07);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
   }
+
+.abas p{
+  font-family: var(--font-Rockwell);
+  text-align: left;
+  color: var(--cor09);
+}
+
+.abas a{
+  text-decoration: none;
+}
+
+.abas a:hover{
+  text-decoration: underline;
+  color: var(--cor08);
+}
+
+.abas a:visited {
+  color: var(--cor08);
+  text-decoration: none;
+}
+
+li{
+  font-family: var(--font-Rockwell);
+  text-align: left;
+  color: var(--cor09);
+}
+

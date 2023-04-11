@@ -113,7 +113,7 @@ a:visited {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 18px 25px 13px 25px;
+  padding: 35px 25px 13px 25px;
   text-decoration: none;
   color: var(--cor09)
 }
