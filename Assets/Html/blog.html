@@ -11,7 +11,8 @@
     
 </head>
 <body>
-    <script src="Assets/JS/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     
     
     
@@ -46,16 +47,22 @@
   <h1>Coloque aqui o seu comentario!</h1>
 
   <p></p>
-            <article>
-            <form action="#">
-                    <label for="username">Nome:</label>
-                    <input type="text" id="username" name="username" required>
-                    <p></p>
-                    <textarea rows="10" cols="40" maxlength="500"  required></textarea>
-                    <input type="submit">
-                </form>
-              
-            </article>
+  <form action="https://formsubmit.co/worlddrugs.2023@gmail.com" method="POST">
+    <div class="input-group">
+        <div class="input-box">
+    <input type="text" name="name" required placeholder="Name" required>
+    <br>
+    <input type="email" name="email" placeholder="Email" required>
+    <br>
+    <textarea name="Message" cols="30" rows="10" placeholder="Message" required></textarea>
+    <br>
+    <button type="submit">Send</button>
+    <br>
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/Mundo-das-drogas/Assets/Html/blog.html">
+    
+            
+        </div>
+</form>
 </main>
     
       
