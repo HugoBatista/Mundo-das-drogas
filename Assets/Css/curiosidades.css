@@ -113,7 +113,7 @@ html {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:920px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
