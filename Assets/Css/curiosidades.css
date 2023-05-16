@@ -1,31 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@font-face {
+  font-family: Rockwell;
+  src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
+}
+@font-face {
+  font-family: Rockwell-bold;
+  src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/Rockwell-Bold.ttf);
+}
+
 
 body{
-    flex-direction: column;
-    font-family: 'Fredoka One', cursive;
-    background-color: var(--cor06);
-    text-align: center;
-    align-items: center;
-    margin-left: 0px;
+  flex-direction: column;
+  font-family: var(--font-Rockwell-bold);
+  background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
+  text-align: center;
+  align-items: center;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
 }
+  
+  
+  :root{
+    --cor00: #094100;
+    --cor01: #3BB128;
+    --cor02: rgba(0, 0, 0, 0.3);
+    --cor03: #000000;
+    --cor04: #ffffff;
+    --cor05: #333;
+    --cor06: #1B1C34;
+    --cor07: #b5ecd5;
+    --cor08: #207a55;
+    --cor09: #4a9b79;
+    --font-Rockwell: 'Rockwell', cursive;
+    --font-Rockwell-bold: 'Rockwell-bold', cursive;
+  }
 
-
-main{
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-:root{
-  --cor00: #865C2C;
-  --cor01: #2c1608;
-  --cor02: rgba(0, 0, 0, 0.3);
-  --cor03: #000000;
-  --cor04: #ffffff;
-  --cor05: #444444;
-  --cor06: #181818;
-}
-
-h1{
+  h1{
     text-align: center;
 }
 
@@ -33,8 +44,14 @@ a{
     text-decoration: none;
 }
 
-a:visited {
-    color: var(--cor03);
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar{
@@ -47,7 +64,7 @@ a:visited {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(var(--cor01), var(--cor00), var(--cor01));
+    background: linear-gradient(var(--cor07), var(--cor08));
     border-radius: 5px;
 }
 
@@ -61,101 +78,234 @@ html {
   
 
   
-.nav {
-  height: 50px;
-  padding-left: 10px;
-  width: 100%;
-  background-color: var(--cor01);
-  box-shadow: 0px 3px 10px var(--cor00);
-  border-radius: 15px;
-  position: relative;
-  margin-top: -7px;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav-title
-{
-  float: left;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: var(--cor04);
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: center;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 60px 13px 10px;
-  text-decoration: none;
-  color: var(--cor00)
-}
-
-.nav > .nav-links > a:hover {
-  background-color: var(--cor02);
-}
-
-.nav > #nav-check {
-  display: none;
-}
-
-@media (max-width:920px) {
+  .nav {
+    height: 55px;
+    padding-left: 10px;
+    width: 100%;
+    background-color: var(--cor07);
+    box-shadow: 0px 3px 10px var(--cor08);
+    border-radius: 0px 0px 15px 15px;
+    position: relative;
+    margin-top: -7px;
+    margin-right: 10px;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav-title
+  {
+    float: left;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: var(--cor04);
+    padding: 10px 10px 10px 10px;
+  }
+  
   .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+    display: none;
   }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: var(--cor01);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid var(--cor04);
-  }
+  
   .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-image: url(../Images/menu\ img.png);
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
+    display: inline;
+    float: center;
+    font-size: 18px;
   }
+  
   .nav > .nav-links > a {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    padding: 18px 25px 13px 25px;
+    text-decoration: none;
+    color: var(--cor09)
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
+  
+  .nav > .nav-links > a:hover {
+    background-color: var(--cor02);
   }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+  
+  .nav > #nav-check {
+    display: none;
   }
+
+  @media (max-width:920px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: var(--cor07);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid var(--cor04);
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+/* start-main */
+
+main{
+  min-width: 300px;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  background-color: var(--cor07);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
 }
+
+main h1, h2{
+ 
+  font-weight: normal;
+}
+
+main h1{
+  color:var(--cor08);
+  font-size: 1.8em;
+}
+
+main h2{
+  color: var(--cor08);
+  font-size: 1.3em;
+  text-indent: 0.8em;
+}
+
+main a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor08);
+  
+  padding: 2px 5px;
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: var(--cor08);
+}
+
+main p{
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 2em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/*main img{
+  width: 100%;
+}*/
+
+main img.pequena{
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+p{
+  color:var(--cor09);
+}
+
+/* End-Main */
+
+
+
+
+
+
+/* Start-Aside */
+
+aside{
+  font-family: var(--font-Rockwell);
+  background-color: var(--cor01);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h3{
+  background-color: var(--cor04);
+  color: var(--cor09);
+  padding: 8px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+ul{
+  list-style-type: '\2714\00A0';
+  list-style-position: inside;
+  columns: 1;
+}
+
+ul{
+  text-align: left;
+  list-style-position: inside;
+  color: var(--cor09);
+}
+/* End-Aside */
+
+img{ 
+    
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.imgs{
+  width: 60%;
+  
+}
+.ola{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-top: 20px
+}
+
+
+ul{
+  list-style: none;
+}
+
+h3{
+  color: var(--cor08);
+}
+
 

@@ -177,7 +177,7 @@ html {
 
   main{
     min-width: 300px;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     margin-bottom: 30px;
     border-bottom-left-radius: 10px;
@@ -186,3 +186,52 @@ html {
     background-color: var(--cor07);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
   }
+  
+  main h1, h2{
+   
+    font-weight: normal;
+  }
+  
+  main h1{
+    color:var(--cor00);
+    font-size: 1.8em;
+  }
+  
+  
+  
+  main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+    background-color: var(--cor01);
+    padding: 2px 5px;
+  }
+  
+  main a:hover{
+    text-decoration: underline;
+    color: var(--cor04);
+  }
+  
+  main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+  /*main img{
+    width: 100%;
+  }*/
+  
+  main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+  }
+  
+  p{
+    color:var(--cor04);
+  }
+  
+  /* End-Main */
