@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @font-face {
   font-family: Rockwell;
   src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
@@ -15,7 +16,7 @@ body{
     background-image: url(../Images/wallpaperbetter.jpg);
     text-align: center;
     align-items: center;
-    
+    margin: 8px;
 }
 
 :root{
@@ -29,19 +30,23 @@ body{
   --cor07: #b5ecd5;
   --cor08: #207a55;
   --cor09: #4a9b79;
+  --cor10: #17573c;
   --font-Rockwell: 'Rockwell', cursive;
   --font-Rockwell-bold: 'Rockwell-bold', cursive;
+  --font-Lobster: 'Lobster Two', cursive;
 }
 
 h1,h2,h3{
-  font-family: var(--font-Rockwell-bold)
+  font-family: var(--font-Lobster)
 }
 h1{
     text-align: center;
-    color: var(--cor08);
+    color: var(--cor10);
+    font-size: 2.3em;
 }
 h2{
-  color: var(--cor08);
+  color: var(--cor10);
+  font-size: 2em;
 }
 
 ::-webkit-scrollbar{
@@ -104,14 +109,15 @@ html {
   .nav > .nav-links {
     display: inline;
     float: center;
-    font-size: 18px;
+    font-size: 1.6em;
   }
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 25px 13px 25px;
+    padding: 9px 25px 8px 10px;
     text-decoration: none;
-    color: var(--cor09);
+    color: var(--cor10);
+    font-family: var(--font-Lobster);
   }
   
   .nav > .nav-links > a:hover {
@@ -122,7 +128,7 @@ html {
     display: none;
   }
   
-  @media (max-width:939px) {
+  @media (max-width:910px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -184,7 +190,8 @@ html {
 .abas p{
   font-family: var(--font-Rockwell);
   text-align: left;
-  color: var(--cor09);
+  color: var(--cor08);
+  font-size: 1.2em;
 }
 
 .abas a{
@@ -204,6 +211,7 @@ html {
 li{
   font-family: var(--font-Rockwell);
   text-align: left;
-  color: var(--cor09);
+  color: var(--cor08);
+  font-size: 1.2em;
 }
 

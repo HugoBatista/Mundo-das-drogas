@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @font-face {
   font-family: Rockwell;
   src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
@@ -15,9 +16,7 @@ body{
   background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
   text-align: center;
   align-items: center;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
+  margin: 8px;
 }
   
   
@@ -32,6 +31,8 @@ body{
     --cor07: #b5ecd5;
     --cor08: #207a55;
     --cor09: #4a9b79;
+    --cor10: #17573c;
+    --font-Lobster: 'Lobster Two', cursive;
     --font-Rockwell: 'Rockwell', cursive;
     --font-Rockwell-bold: 'Rockwell-bold', cursive;
   }
@@ -81,7 +82,7 @@ html {
 
   
   .nav {
-    height: 55px;
+    height: 50px;
     padding-left: 10px;
     width: 100%;
     background-color: var(--cor07);
@@ -115,14 +116,15 @@ html {
   .nav > .nav-links {
     display: inline;
     float: center;
-    font-size: 18px;
+    font-size: 1.6em;
   }
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 18px 25px 13px 25px;
+    padding: 9px 25px 8px 10px;
     text-decoration: none;
-    color: var(--cor09)
+    color: var(--cor10);
+    font-family: var(--font-Lobster);
   }
   
   .nav > .nav-links > a:hover {
@@ -133,7 +135,7 @@ html {
     display: none;
   }
 
-  @media (max-width:920px) {
+  @media (max-width:930px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -199,13 +201,15 @@ main h1, h2{
 }
 
 main h1{
-  color:var(--cor08);
-  font-size: 1.8em;
+  color:var(--cor10);
+  font-size: 2.6em;
+  font-family: var(--font-Lobster);
 }
 
 main h2{
-  color: var(--cor08);
-  font-size: 1.3em;
+  color: var(--cor10);
+  font-family: var(--font-Lobster);
+  font-size: 2.3em;
   background-image: linear-gradient(to right, var(--cor00), transparent);
   text-indent: 0.8em;
 }
@@ -226,7 +230,7 @@ main a:hover{
 main p{
   margin: 0px 0px;
   text-align: justify;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.5em;
 }
 
@@ -234,7 +238,8 @@ main p{
 
 
 p{
-  color:var(--cor09);
+  color:var(--cor08);
+  
 }
 
 /* End-Main */
@@ -254,7 +259,7 @@ aside{
 
 aside h3{
   background-color: var(--cor04);
-  color: var(--cor09);
+  color: var(--cor10);
   padding: 8px;
   margin: -10px -10px 0px -10px;
   border-radius: 10px 10px 0px 0px;
@@ -269,7 +274,11 @@ aside ul{
 article ul{
   text-align: left;
   list-style-position: inside;
-  color: var(--cor09);
+  color: var(--cor08);
+}
+
+article li{
+  font-size: 1.2em; 	
 }
 /* End-Aside */
 
@@ -292,7 +301,9 @@ ul{
 }
 
 h3{
-  color: var(--cor08);
+  color: var(--cor10);
+  font-size: 2em;
+  font-family: var(--font-Lobster)
 }
 
 
@@ -311,4 +322,24 @@ div.video > iframe {
   width: 90%;
   height: 90%;
   border-radius: 10px;
+}
+
+.btn{
+  float: left;
+  
+}
+.button{
+  font-family: var(--font-Rockwell-bold);
+  background-color: var(--cor0);
+  border: 0;
+  color: var(--cor03);
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.button:hover{
+  background-color: var(--cor09);
+  border-radius: 10px;
+  border: dashed;
 }

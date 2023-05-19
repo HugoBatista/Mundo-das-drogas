@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Css/duvidas.css">
+    <link rel="shortcut icon" href="/Mundo-das-drogas/Assets/Images/icon.ico" type="image/x-icon">
+    <title>Duvidas</title>
+    
+</head>
+<body>
+   
+    
+    
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        
+        <div class="nav-links">
+            <a href="/Mundo-das-drogas/index.html" class="nav-link">Inicio</a>
+            <a href="drogas.html" class="nav-link">Drogas</a>
+            <a href="Quimica.html" class="nav-link">Quîmica</a>
+            <a href="Investigaçao.html" class="nav-link">Investigação</a>
+            <a href="curiosidades.html" class="nav-link">Curiosidades</a>
+            <a href="about.html" class="nav-link">Sobre</a>
+            <a href="duvidas.html" class="nav-link">Dúvidas</a>
+        </div>
+    </div>
+    
+    <main>
+  <h1>Coloque aqui o seu comentario!</h1>
+
+  <p></p>
+  <form action="https://formsubmit.co/worlddrugs.2023@gmail.com" method="POST">
+    <div class="input-group">
+        <div class="input-box">
+    <input style="border-radius: 7px;" type="text" name="name" required placeholder="Nome" required > 
+    <br>
+    <input style="border-radius: 7px;" type="email" name="email" placeholder="Email" required>
+    <br>
+    <textarea style="border-radius: 10px;" name="Message" cols="30" rows="10" placeholder="Comentário" required></textarea>
+    <br>
+    <button type="submit">Enviar</button>
+    <br>
+    <input type="hidden" name="_next" value="https://hugobatista.github.io/Mundo-das-drogas/Assets/Html/blog.html">        
+    </div>
+</form>
+
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>    
+<section class="accordion container">
+        <div class="accordion__content">
+
+            <h2 class="accordion__title">
+                Perguntas Frequentes:
+            </h2>
+
+            <div class="accordion__item">
+                <header class="item__header">
+                    <i class='bx bx-chevron-down item__icon'></i>
+                    <h4 class="item__question">O que é a Cannabis?</h4>
+                </header>
+                <div class="item__content">
+                    <p class="item__answer">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo exercitationem magnam quas voluptatibus provident reiciendis atque necessitatibus in deleniti maiores non error, odit reprehenderit, accusantium hic quaerat id alias! Eius?
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="accordion__item">
+                <header class="item__header">
+                    <i class='bx bx-chevron-down item__icon'></i>
+                    <h4 class="item__question">Qual é a droga mais usada?</h4>
+                </header>
+                <div class="item__content">
+                    <p class="item__answer">
+                        
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="accordion__item">
+                <header class="item__header">
+                    <i class='bx bx-chevron-down item__icon'></i>
+                    <h4 class="item__question">O que é a Cannabis?</h4>
+                </header>
+                <div class="item__content">
+                    <p class="item__answer">
+                        HTML abreviação para a expressão inglesa
+                        HyperText Markup Language, que significa:
+                        "Linguagem de Marcação de Hipertexto" é
+                        uma linguagem de marcação utilizada na
+                        construção de páginas na Web.
+                    </p>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+    <script>//selecionar todas as perguntas
+        const questions = document.querySelectorAll('.item__header');
+        
+        // percorrer cada uma das perguntas e adicionar um evento de clique
+        questions.forEach(question => {
+            question.addEventListener('click', function () {
+        
+                // verificar se tem alguma pergunta aberta
+                let openQuestion = document.querySelector('.item__header.active');
+        
+                // se existir alguma pergunta aberta 
+              // e ela for diferente da atual então feche
+                if (openQuestion && openQuestion !== this){
+                    setAnswer(openQuestion);
+                }
+        
+                // abrir ou fechar a resposta
+                setAnswer(question);
+        
+            });
+        });
+        
+        function setAnswer(question) {
+        
+            // adicionar ou remover a classe active da pergunta
+            question.classList.toggle('active');
+        
+            // recuperar a resposta
+            let answer = question.nextElementSibling;
+        
+            // se a resposta estiver aberta então feche
+            if (answer.style.maxHeight)
+                answer.style.maxHeight = null;
+            else
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+        </script>
+</main>
+</body>
+</html>

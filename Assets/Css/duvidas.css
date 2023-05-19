@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@font-face {
+  font-family: Rockwell;
+  src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
+}
+@font-face {
+  font-family: Rockwell-bold;
+  src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/Rockwell-Bold.ttf);
+}
+
+body{
+  flex-direction: column;
+  font-family: var(--font-Rockwell-bold);
+  background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
+  text-align: center;
+  align-items: center;
+  margin: 8px;
+}
+
+
+main{
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+:root{
+  --cor00: #094100;
+  --cor01: #3BB128;
+  --cor02: rgba(0, 0, 0, 0.3);
+  --cor03: #000000;
+  --cor04: #ffffff;
+  --cor05: #333;
+  --cor06: #1B1C34;
+  --cor07: #b5ecd5;
+  --cor08: #207a55;
+  --cor09: #4a9b79;
+  --cor10: #17573c;
+  --font-Lobster: 'Lobster Two', cursive;
+  --font-Rockwell: 'Rockwell', cursive;
+  --font-Rockwell-bold: 'Rockwell-bold', cursive;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--cor03);
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--cor04); 
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(var(--cor07), var(--cor08));
+    border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  
+  .nav {
+    height: 50px;
+    padding-left: 10px;
+    width: 100%;
+    background-color: var(--cor07);
+    box-shadow: 0px 3px 10px var(--cor08);
+    border-radius: 0px 0px 15px 15px;
+    position: relative;
+    margin-top: -7px;
+    margin-right: 10px;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav-title
+  {
+    float: left;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: var(--cor04);
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: center;
+    font-size: 1.6em;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 9px 25px 8px 10px;
+    text-decoration: none;
+    color: var(--cor10);
+    font-family: var(--font-Lobster);  
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: var(--cor02);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+  @media (max-width:910px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: var(--cor07);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid var(--cor04);
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+  main{
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    background-color: var(--cor07);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+  }
+  
+  main h1, h2{
+   
+    font-weight: normal;
+  }
+  
+  main h1{
+    color:var(--cor00);
+    font-size: 2.6em;
+    font-family: var(--font-Lobster);
+  }
+  
+  
+  
+  main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+    background-color: var(--cor01);
+    padding: 2px 5px;
+  }
+  
+  main a:hover{
+    text-decoration: underline;
+    color: var(--cor04);
+  }
+  
+  main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+  /*main img{
+    width: 100%;
+  }*/
+  
+  main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+  }
+  
+  p{
+    color:var(--cor03);
+  }
+  
+  /* End-Main */
+  
+/*=======> RESIZE FONT - DESKTOP <=======*/
+@media screen and (min-width:992px) {
+    :root {
+
+        /*=======> typography <=======*/
+        --big-font: 1.201rem;
+        --medium-font: 1.068rem;
+        --small-font: 0.949rem;
+    }
+}
+
+/*=======> RESET <=======*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/*=======> GENERAL <=======*/
+
+
+.container {
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*=======> LAYOUT <=======*/
+.accordion {
+    min-height: 60vh;
+    padding: 2rem 0;
+    display: grid;
+    place-items: center;
+}
+
+.accordion__content {
+    max-width: 570px;
+    padding: 2rem;
+    background: var(--white);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.accordion__title {
+    font-size: var(--big-font);
+    line-height: 150%;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.accordion__item {
+    border-radius: 6px;
+    margin-top: 8px;
+    background-color: #F3F3F3;
+    border-left: 4px solid #C1BEBB;
+}
+
+.item__header {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    padding: 1.25rem;
+    cursor: pointer;
+}
+
+.item__icon {
+    font-size: 1.5rem;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.item__question {
+    font-size: var(--medium-font);
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.active .item__icon {
+    transform: rotate(180deg);
+}
+
+.active .item__question {
+    font-weight: 500;
+}
+
+/*=======> items color <=======*/
+.accordion__item:nth-of-type(1) {
+    background: #FFF8DF;
+    border-left-color: #FFC78F;
+}
+
+.accordion__item:nth-of-type(2) {
+    background: #F0FAFF;
+    border-left-color: #B4B3F2;
+}
+
+.accordion__item:nth-of-type(3) {
+    background: #FFEAED;
+    border-left-color: #F8B4BF;
+}
+
+.accordion__item:nth-of-type(4) {
+    background: #E5FAE2;
+    border-left-color: #B4E8AB;
+}
+
+.item__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.item__answer {
+    line-height: 150%;
+    padding: 0 3.5rem;
+}
+
+p~p {
+    margin-top: 0.5rem;
+}
+
+.item__content :last-child {
+    margin-bottom: 1.25rem;
+}
+
+/*=======> MEDIAS QUERIES <=======*/
+@media screen and (min-width:992px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .item__header {
+        padding: 1.5rem;
+        column-gap: 1.5rem;
+    }
+
+    .item__answer {
+        padding: 0 4.5rem;
+    }
+    p~p {
+        margin-top: 0.5rem;
+    }
+    
+    .item__content :last-child {
+        margin-bottom: 1.5rem;
+    }
+
+}

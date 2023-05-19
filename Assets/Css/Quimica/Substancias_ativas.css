@@ -32,9 +32,9 @@ body{
     --cor08: #207a55;
     --cor09: #4a9b79;
     --cor10: #17573c;
+    --font-Lobster: 'Lobster Two', cursive;
     --font-Rockwell: 'Rockwell', cursive;
     --font-Rockwell-bold: 'Rockwell-bold', cursive;
-    --font-Lobster: 'Lobster Two', cursive;
   }
 
   h1{
@@ -45,9 +45,7 @@ a{
     text-decoration: none;
 }
 
-a:visited {
-    color: var(--cor03);
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -125,7 +123,6 @@ html {
     text-decoration: none;
     color: var(--cor10);
     font-family: var(--font-Lobster);
-    
   }
   
   .nav > .nav-links > a:hover {
@@ -186,7 +183,7 @@ html {
 
 main{
   min-width: 300px;
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
@@ -197,42 +194,50 @@ main{
 }
 
 main h1, h2{
- 
+  font-family: var(--font-Lobster);
   font-weight: normal;
 }
 
 main h1{
   color:var(--cor10);
-  font-family: var(--font-Lobster);
-  font-size: 3em;
+  font-size: 2.6em;
 }
 
 main h2{
   color: var(--cor10);
-  font-family: var(--font-Lobster);
-  font-size: 2em;
-  background-image: linear-gradient(to right, var(--cor00), transparent);
+  font-size: 2.3em;
   text-indent: 0.8em;
 }
 
 main a{
   text-decoration: none;
   font-weight: bold;
-  color: var(--cor05);
-  background-color: var(--cor01);
+  color: var(--cor08);
+  
   padding: 2px 5px;
 }
 
 main a:hover{
   text-decoration: underline;
-  color: var(--cor04);
+  color: var(--cor08);
 }
 
 main p{
-  margin: 0px 0px;
+  margin: 15px 0px;
   text-align: justify;
+  text-indent: 2em;
   font-size: 1.2em;
   line-height: 1.5em;
+}
+
+/*main img{
+  width: 100%;
+}*/
+
+main img.pequena{
+  max-width: 350px;
+  display: block;
+  margin: auto;
 }
 
 p{
@@ -244,10 +249,12 @@ p{
 
 
 
+
+
 /* Start-Aside */
 
 aside{
-  font-family: var(--font-Lobster);
+  font-family: var(--font-Rockwell);
   background-color: var(--cor01);
   padding: 10px;
   border-radius: 10px;
@@ -262,20 +269,20 @@ aside h3{
   border-radius: 10px 10px 0px 0px;
 }
 
-aside ul{
-  list-style-type: '\2714\00A0';
+ul{
+  list-style-type: disc ;
   list-style-position: inside;
-  columns: 2;
+  columns: 1;
 }
 
-article ul{
+ul{
   text-align: left;
   list-style-position: inside;
-  color: var(--cor09);
+  color: var(--cor08);
 }
+li{
+  font-size: 1.2em; 	
 
-article li{
-  font-size: 1.2em; 		
 }
 /* End-Aside */
 
@@ -299,30 +306,10 @@ img{
 }
 
 
-ul{
-  list-style: none;
-}
+
 
 h3{
   color: var(--cor08);
-}
-
-
-div.video{
-  background-color: var(--cor07);
-  margin: 0px -20px 30px -20px;
-  padding: 20px;
-  padding-bottom: 56.6%;
-  position: relative;
-}
-
-div.video > iframe {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  border-radius: 10px;
 }
 
 .btn{

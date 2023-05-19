@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @font-face {
   font-family: Rockwell;
   src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
@@ -8,25 +9,19 @@
   src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/Rockwell-Bold.ttf);
 }
 
+
 body{
   flex-direction: column;
   font-family: var(--font-Rockwell-bold);
   background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
   text-align: center;
   align-items: center;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
+  margin: 8px;
 }
-
-
-main{
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-:root{
-  --cor00: #094100;
+  
+  
+  :root{
+    --cor00: #094100;
     --cor01: #3BB128;
     --cor02: rgba(0, 0, 0, 0.3);
     --cor03: #000000;
@@ -36,11 +31,13 @@ main{
     --cor07: #b5ecd5;
     --cor08: #207a55;
     --cor09: #4a9b79;
+    --cor10: #17573c;
+    --font-Lobster: 'Lobster Two', cursive;
     --font-Rockwell: 'Rockwell', cursive;
     --font-Rockwell-bold: 'Rockwell-bold', cursive;
-}
+  }
 
-h1{
+  h1{
     text-align: center;
 }
 
@@ -48,8 +45,14 @@ a{
     text-decoration: none;
 }
 
-a:visited {
-    color: var(--cor03);
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar{
@@ -62,7 +65,7 @@ a:visited {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(var(--cor01), var(--cor00), var(--cor01));
+    background: linear-gradient(var(--cor07), var(--cor08));
     border-radius: 5px;
 }
 
@@ -77,7 +80,7 @@ html {
 
   
   .nav {
-    height: 55px;
+    height: 50px;
     padding-left: 10px;
     width: 100%;
     background-color: var(--cor07);
@@ -111,14 +114,15 @@ html {
   .nav > .nav-links {
     display: inline;
     float: center;
-    font-size: 18px;
+    font-size: 1.6em;
   }
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 18px 25px 13px 25px;
+    padding: 9px 25px 8px 10px;
     text-decoration: none;
-    color: var(--cor09)
+    color: var(--cor10);
+    font-family: var(--font-Lobster);
   }
   
   .nav > .nav-links > a:hover {
@@ -129,7 +133,7 @@ html {
     display: none;
   }
 
-  @media (max-width:920px) {
+  @media (max-width:910px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -175,63 +179,155 @@ html {
     }
   }
 
-  main{
-    min-width: 300px;
-    max-width: 900px;
-    margin: auto;
-    margin-bottom: 30px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 20px;
-    background-color: var(--cor07);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
-  }
+/* start-main */
+
+main{
+  min-width: 300px;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  background-color: var(--cor07);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+main h1, h2{
+  font-family: var(--font-Lobster);
+  font-weight: normal;
+}
+
+main h1{
+  color:var(--cor10);
+  font-size: 2.6em;
+}
+
+main h2{
+  color: var(--cor10);
+  font-size: 2.3em;
+  text-indent: 0.8em;
+}
+
+main a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor08);
   
-  main h1, h2{
-   
-    font-weight: normal;
-  }
+  padding: 2px 5px;
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: var(--cor08);
+}
+
+main p{
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 2em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+/*main img{
+  width: 100%;
+}*/
+
+main img.pequena{
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+p{
+  color:var(--cor08);
+}
+
+/* End-Main */
+
+
+
+
+
+
+/* Start-Aside */
+
+aside{
+  font-family: var(--font-Rockwell);
+  background-color: var(--cor01);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h3{
+  background-color: var(--cor04);
+  color: var(--cor09);
+  padding: 8px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+ul{
+  list-style-type: disc ;
+  list-style-position: inside;
+  columns: 1;
+}
+
+ul{
+  text-align: left;
+  list-style-position: inside;
+  color: var(--cor08);
+}
+li{
+  font-size: 1.2em; 	
+
+}
+/* End-Aside */
+
+img{ 
+    
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.imgs{
+  width: 60%;
   
-  main h1{
-    color:var(--cor00);
-    font-size: 1.8em;
-  }
+}
+.ola{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-top: 20px
+}
+
+
+
+
+h3{
+  color: var(--cor08);
+}
+
+.btn{
+  float: left;
   
-  
-  
-  main a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--cor05);
-    background-color: var(--cor01);
-    padding: 2px 5px;
-  }
-  
-  main a:hover{
-    text-decoration: underline;
-    color: var(--cor04);
-  }
-  
-  main p{
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 2em;
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-  
-  /*main img{
-    width: 100%;
-  }*/
-  
-  main img.pequena{
-    max-width: 350px;
-    display: block;
-    margin: auto;
-  }
-  
-  p{
-    color:var(--cor04);
-  }
-  
-  /* End-Main */
+}
+.button{
+  font-family: var(--font-Rockwell-bold);
+  background-color: var(--cor0);
+  border: 0;
+  color: var(--cor03);
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.button:hover{
+  background-color: var(--cor09);
+  border-radius: 10px;
+  border: dashed;
+}

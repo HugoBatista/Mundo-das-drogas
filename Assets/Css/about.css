@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @font-face {
   font-family: Rockwell;
   src: url(/Mundo-das-drogas/Assets/Fonts/Rockwell-Font/ROCK.TTF);
@@ -36,9 +37,7 @@ body{
   background-image: url(../Images/wallpaperbetter.jpg);
   text-align: center;
   align-items: center;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
+  margin: 8px;
 }
 
 :root{
@@ -53,6 +52,8 @@ body{
   --cor08: #207a55;
   --cor09: #4a9b79;
   --cor10: #9ae4c4;
+  --cor11: #17573c;
+  --font-Lobster: 'Lobster Two', cursive;
   --font-Rockwell: 'Rockwell', cursive;
   --font-Rockwell-bold: 'Rockwell-bold', cursive;
 }
@@ -74,7 +75,7 @@ a:visited {
 /* Start-Nav */
   
 .nav {
-  height: 55px;
+  height: 50px;
   padding-left: 10px;
   width: 100%;
   background-color: var(--cor07);
@@ -109,14 +110,15 @@ a:visited {
 .nav > .nav-links {
   display: inline;
   float: center;
-  font-size: 18px;
+  font-size: 1.6em;
 }
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 22px 25px 13px 25px;
+  padding: 9px 25px 8px 10px;
   text-decoration: none;
-  color: var(--cor09)
+  color: var(--cor11);
+  font-family: var(--font-Lobster);
 }
 
 .nav > .nav-links > a:hover {
@@ -127,7 +129,7 @@ a:visited {
   display: none;
 }
 
-@media (max-width:920px) {
+@media (max-width:910px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -189,7 +191,6 @@ main{
 }
 
 main h1, h2{
- 
   font-weight: normal;
 }
 
@@ -284,7 +285,8 @@ p{
   font-weight: 900;
   text-transform: capitalize;
   font-size: 26px;
-  color: var(--cor09);
+  color: var(--cor11);
+  font-family: var(--font-Lobster);
   padding-bottom: 20px;
 }
 
