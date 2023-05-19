@@ -196,6 +196,7 @@ html {
 
 .abas a{
   text-decoration: none;
+  color: var(--cor08);
 }
 
 .abas a:hover{

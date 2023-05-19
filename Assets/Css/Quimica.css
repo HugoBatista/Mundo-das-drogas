@@ -45,6 +45,7 @@ h1{
 
 a{
     text-decoration: none;
+    color: var(--cor09);
 }
 a:visited {
     color: var(--cor09);
