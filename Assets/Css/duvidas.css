@@ -196,7 +196,7 @@ html {
   
   main h1{
     color:var(--cor00);
-    font-size: 2.6em;
+    font-size: 3.5em;
     font-family: var(--font-Lobster);
   }
   
@@ -386,4 +386,45 @@ p~p {
         margin-bottom: 1.5rem;
     }
 
+}
+
+.input-group{
+  min-height: 60vh;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+}
+ 
+.input-box{
+  margin: 10px;
+  background-color: var(--cor10);
+  width: 600px;
+  height: 377px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  width: 550px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 0.8rem;
+}
+
+.butao{
+  width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: var(--cor07);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.textarea{
+  width: 555px;
 }

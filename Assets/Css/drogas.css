@@ -221,7 +221,7 @@ html {
 }
 
 .card_title {
-    font-family: var(--font-Rockwell);
+  font-family: var(--font-Lobster);
     font-weight: 900;
     text-transform: capitalize;
     color: var(--cor09);

@@ -200,7 +200,7 @@ main h1, h2{
 
 main h1{
   color:var(--cor10);
-  font-size: 2.6em;
+  font-size: 4em;
 }
 
 main h2{
@@ -220,12 +220,6 @@ main a{
 main a:hover{
   text-decoration: underline;
   color: var(--cor08);
-}
-
-.textos p{
-  text-align: center;
-  font-size: 30px;
-  font-family: var(--font-Lobster);
 }
 
 main p{
@@ -297,7 +291,7 @@ img{
   display: inline-flex;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .imgs{
@@ -311,7 +305,23 @@ img{
   margin-top: 20px
 }
 
-
+div.video{
+    background-color: var(--cor07);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.6%;
+    position: relative;
+  }
+  
+  div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+  }
+  
 
 
 h3{
