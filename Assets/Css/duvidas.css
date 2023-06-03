@@ -428,3 +428,29 @@ p~p {
 .textarea{
   width: 555px;
 }
+
+@media screen and (max-width:660px) {
+
+.input-box {
+  width: 380px;
+}
+.input-box input, .textarea, .butao{
+  width: 360px;
+}
+
+}
+
+@media screen and (max-width:400px) {
+
+  .input-box {
+    width: 280px;
+  }
+  .input-box input, .textarea, .butao{
+    width: 260px;
+  }
+  
+  .accordion__content{
+    width: 280px;
+  }
+
+  }
